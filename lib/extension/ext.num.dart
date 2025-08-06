@@ -6,3 +6,7 @@ extension GapExtension on num {
   SizedBox get h => SizedBox(height: toDouble());
   SizedBox get w => SizedBox(width: toDouble());
 }
+
+extension SliverGapExtension on num {
+  SliverGap get sg => SliverGap(toDouble());
+}
