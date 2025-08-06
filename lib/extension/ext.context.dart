@@ -10,3 +10,8 @@ extension ThemeContext on BuildContext {
   TextSystem get textSystem => TextSystem.defaultSystem;
   TextSystem get text => textSystem;
 }
+
+extension MediaQueryExtension on BuildContext {
+  double get mediaHeight => MediaQuery.of(this).size.height;
+  double get mediaWidth => MediaQuery.of(this).size.width;
+}
